@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Buyer</h1>
+        <nav>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+                 <li><a href="farmer.html">Farmer</a></li>
+                <li><a href="buyer.html">Buyer</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="view-crops">
+            <h2>Available Crops</h2>
+            <ul>
+                <li>Wheat - $500/ton</li>
+                <li>Rice - $400/ton</li>
+                <li>Corn - $350/ton</li>
+            </ul>
+        </section>
+
+        <section id="buy-crops">
+            <h2>Buy Crops</h2>
+            <form id="buyer-form">
+                <label for="crop">Crop:</label>
+                <select id="crop" name="crop">
+                    <option value="wheat">Wheat</option>
+                    <option value="rice">Rice</option>
+                    <option value="corn">Corn</option>
+                </select>
+
+                <label for="quantity">Quantity (tons):</label>
+                <input type="number" id="quantity" name="quantity" required>
+
+                <button type="submit">Purchase</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rural Agriculture Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
